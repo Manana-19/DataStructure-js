@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  },
+  "name": "datastructure",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"npx nodemon main.mjs"
+  },
+  "keywords": [],
+  "author": "Manan",
+  "license": "ISC",
+  "description": ""
+}
