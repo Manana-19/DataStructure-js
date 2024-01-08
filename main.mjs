@@ -1,19 +1,17 @@
 import Arr from "./data_structure/arrays.mjs";
+import Stack from "./data_structure/stack.mjs";
+// import Queue from "./data_structure/queue.mjs";
 
-const arr = new Arr();
-
+const arr = new Stack(0);
+// const queue = new Queue(0);
 for (let i = 1; i < 5; i++) {
-    arr.append(i*2)
+    arr.push(i*2);
+    // queue.push(i*2);
 };
 
-console.log(arr.show()); // [2,4,6,8]
+console.log(arr.show()); // [8,6,4,2,0]
+// console.log(queue.show());
 
-arr.remove(4);
-
-console.log(arr.show()); // [2,6,8]
-
-arr.insert(10,2);
-
-console.log(arr.show()); // [2,6,10,8]
-console.log(arr.indexOf(6)) // 1
-console.log(arr.length) // 4
+console.log(arr.pop()); // 8
+console.log(arr.show()); // [6,4,2,0]
+console.log(arr.peek()); // 6
